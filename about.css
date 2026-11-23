@@ -1,0 +1,20 @@
+#gamebutton{
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+    font-family: Georgia;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: #482d1f;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.subfont{
+    display: block;
+    text-align: center;
+}
