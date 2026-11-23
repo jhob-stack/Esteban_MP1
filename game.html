@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js" defer></script>
+</head>
+<body>
+
+    <div class="announcement-strip" aria-label="Bakery announcements">
+        <div class="announcement-track">
+            <span>FRESH FROM THE OVEN &bull; MADE WITH LOVE &bull; VISIT US TODAY &bull;&nbsp; FRESH FROM THE OVEN &bull; MADE WITH LOVE &bull; VISIT US TODAY &bull;&nbsp;</span>
+            <span aria-hidden="true">FRESH FROM THE OVEN &bull; MADE WITH LOVE &bull; VISIT US TODAY &bull;&nbsp; FRESH FROM THE OVEN &bull; MADE WITH LOVE &bull; VISIT US TODAY &bull;&nbsp;</span>
+        </div>
+    </div>
+
+
+    <nav class ="navbar">
+        <div class ="logo"> <img src="pics/logo.png" ></div>
+        <ul class = "nav-links">
+            <li><a href="index.html"> home</a> </li>
+            <li><a href="menu.html"> menu </a> </li>
+            <li><a href="#"> gallery </a> </li>
+            <li><a href="contact.html"> contacts </a> </li>
+            <li><a href="reviews.html"> reviews </a> </li>
+            <li><a href="about.html"> about </a> </li>
+        </ul>
+    </nav>
+
+
+    <main class="game">
+        <h1>guess the product</h1>
+        <p id="progress">Picture 1 of 8</p>
+
+        <img id="picture" src="" alt="Picture to guess">
+
+        <form id="guessForm">
+            <label for="guessInput">What is in this picture?</label>
+            <div class="guess-controls">
+                <input type="text" id="guessInput" placeholder="Type your guess" autocomplete="off" required>
+                <button type="submit" id="submitButton">Check</button>
+            </div>
+        </form>
+
+        <p id="feedback" aria-live="polite">Enter your guess to begin.</p>
+        <button type="button" id="nextButton" hidden>Next picture</button>
+        <div id="finalResult" hidden></div>
+        <button type="button" id="restartButton" hidden>Play again</button>
+    </main>
+
+
+<footer class = "footer">
+    <div class = "footer-letter">
+        <p class="subfont">stay updated </p>
+        <form class="signup">
+            <input type ="email" placeholder ="youremail@gmail.com" required>
+                <button type ="submit" id="signup"> sign up</button>
+        </form>
+        <p class="disclaimer">
+            by submitting your email, you agree that we may send you promotional materials.
+        </p>
+    </div>
+
+ <div class = " footer-links"> 
+    <a  href="https://www.facebook.com/latelier.baguio"> <img src="pics/icon/2.png" alt="fb"  > </a>
+    <a href="https://www.instagram.com/latelierbaguio?utm_source=ig_web_button_share_sheet&gwpx=ZDNlZDc0MzIxNw=="> <img src="pics/icon/1.png" alt="ig" > </a>
+    </div>
+
+    </div>
+
+    <div class ="footer-brand">
+    L' ATELIER DU GRAIN
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
